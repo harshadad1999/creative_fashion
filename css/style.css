@@ -187,10 +187,108 @@ body {
 
 
 /*============= FOOTER =============*/
-
-
+footer{
+  background-color: #383838;
+  padding: 1rem 2rem 3rem;
+ 
+}
+footer img{
+  height: 3.5rem;
+  margin: 1.5rem auto;
+}
+footer p,footer a{
+  color: white;
+  text-decoration: none;
+}
+ul.social{
+  list-style-type: none;
+  display: flex;
+  max-width: 26rem;
+  margin: 0 auto;
+}
+ul.social li{
+  margin: 0 auto;
+}
+form .text{
+  font-size: 1.0625rem;
+  margin-bottom: 2px;
+  color: #656565;
+}
+form .msg{
+  margin-top: 10px;
+}
+form input,  form .msgForm{
+  width: 100%;
+  font-size: 1.0625rem;
+  background: #151515;
+  padding-left: 10px;
+  border: 1px solid #222222;
+}
+form input:focus,
+form .msgForm:focus{
+  outline-color: #3498db;
+}
+ form input{
+  height: 35px;
+}
+ form .btn{
+  margin-top: 10px;
+}
+ form .btn button{
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #f12020;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .3s;
+}
+ form .btn button:hover{
+  background: #000;
+}
 
 /*============= SOCKET =============*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+
+
+
 
 
 
