@@ -15,6 +15,23 @@
     <link rel="stylesheet" href="css/login_style.css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+        <script type="text/javascript">
+        $(document).ready(function(){
+  $('[data-toggle="popover"]').popover();   
+});
+
+        $(document).ready(function(){
+  $("h2").mouseover(function(){
+    $("h2").css("background-color", "#bf00ff");
+  });
+  $("h2").mouseout(function(){
+    $("h2").css("background-color", "#00bfff");
+  });
+  $("h2").click(function(){
+    $(".form-group").toggle();
+  });
+});
+    </script>
 </head>
 <body>
 
