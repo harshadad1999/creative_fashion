@@ -15,6 +15,49 @@
 	<link rel="stylesheet" href="css/style.css">
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+	<script>
+       $(document).ready(function(){
+       $("#toggle").click(function(){
+       $("p").toggle();
+  });
+});
+       $(document).ready(function(){
+       $(".top-bar").click(function(){
+       $("p").hide(1000);
+  });
+       $(document).ready(function(){
+  $("h1").click(function(){
+    $(".lead").css("color", "#0000ff")
+      .slideUp(2000)
+      .slideDown(2000);
+  });
+});
+});
+       $(document).ready(function() {
+			// grab the initial top offset of the navigation 
+		   	var stickyNavTop = $('.navbar').offset().top;
+		   	
+		   	// our function that decides weather the navigation bar should have "fixed" css position or not.
+		   	var stickyNav = function(){
+			    var scrollTop = $(window).scrollTop(); // our current vertical position from the top
+			         
+			    // if we've scrolled more than the navigation, change its position to fixed to stick to top,
+			    // otherwise change it back to relative
+			    if (scrollTop > stickyNavTop) { 
+			        $('.navbar').addClass('sticky');
+			    } else {
+			        $('.navbar').removeClass('sticky'); 
+			    }
+			};
+
+			stickyNav();
+			// and run it again every time you scroll
+			$(window).scroll(function() {
+				stickyNav();
+			});
+		});
+
+</script>
 </head>
 <body>
 
