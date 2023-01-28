@@ -51,6 +51,10 @@ body {
   border-top: 0;
 }
 
+.w-100
+{
+ height: 500 px;
+}
 
 /*============= CAROUSEL =============*/
 #carousel{
